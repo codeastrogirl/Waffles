@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Make Your Own Waffles!</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Making Waffles is easy :)</h1>
+        <img src="waffle-icon.png" alt="Waffle!">
+        <nav>    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instruction.html">Instructions</a></li>
+            </ul>        
+        </nav>
+    </header>
+
+    <main>
+        <div class="waffle-container">
+            <div class="waffle-column">
+                <h2>Make Your Own Waffle with Toppings!</h2>
+                <p>Choose your favorite toppings to create a unique waffle!</p>
+                <div class="MakeWaffle">
+                    <div class="topping Chocolate" data-topping="chocolate" data-img-src="chocolate-topping.jpg">
+                        <img src="chocolate-topping.jpg" alt="Chocolate">
+                        <p>Chocolate</p>
+                    </div>
+                    <div class="topping Strawberry" data-topping="strawberry" data-img-src="strawberry.png">
+                        <img src="strawberry.png" alt="strawberry">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="topping Blueberry" data-topping="blueberry" data-img-src="blueberry.png">
+                        <img src="blueberry.png" alt="blueberry">
+                        <p>Blueberry</p>
+                    </div>
+                    <div class="topping Banana" data-topping="banana" data-img-src="banana.png">
+                        <img src="banana.png" alt="banana">
+                        <p>Banana</p>
+                    </div>
+                    <div class="topping MapleSyrup" data-topping="maple-syrup" data-img-src="maple-syrup.png">
+                        <img src="maple-syrup.png" alt="MapleSyrup">
+                        <p>Maple Syrup</p>
+                    </div>
+                    <div class="topping WhippedCream" data-topping="whipped-cream" data-img-src="whipped-cream.png">
+                        <img src="whipped-cream.png" alt="whipped-cream">
+                        <p>Whipped Cream</p>
+                    </div>
+                    <div class="topping IceCream" data-topping="ice-cream" data-img-src="ice-cream.png">
+                        <img src="ice-cream.png" alt="Ice Cream">
+                        <p>Ice Cream</p>
+                    </div>
+                </div>
+                <button id="topping-btn">Submit!</button>
+            </div>
+            
+            <div class="waffle-column">
+                <h2>Here is your Unique Waffle!</h2>
+                <img id="waffle-image" src="waffle-plain.jpg" alt="A waffle with no toppings!!">
+            </div>
+        </div>
+        
+        <h2>Had Fun Visualizing Your Unique Waffle!</h2>
+        <p>Click the button below to learn how to your own waffle!</p>
+        <a href="instruction.html"><button>Click Me!</button></a>
+    </main>
+    
+    <footer style="margin-top: 15px;">
+        <p>© 2023 Waffle Lovers</p>
+        <p>Made by codegirl</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

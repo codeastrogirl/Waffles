@@ -1,0 +1,168 @@
+--- START OF FILE styles.css ---
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+    --paragraph-color: #555;
+    --waffle-color: #f39c12;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--paragraph-color);}
+
+nav {
+    background-color: var(--waffle-color);
+    padding: 10px;
+}
+
+#title {
+    color: var(--waffle-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+header img {
+    height: auto;
+    width: 100px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.waffle-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.waffle-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.MakeWaffle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.MakeWaffle > div {
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.2s, background-color 0.3s; /* Added transition for background */
+}
+
+.MakeWaffle > div:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.MakeWaffle img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+#waffle-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid var(--secondary-color);
+}
+
+.waffle-column button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.selected {
+    border-color: var(--waffle-color); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: var(--waffle-color);
+    color: white;
+}
+
+button {
+    background-color: var(--waffle-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    transition: transform 0.2s, background-color 0.3s;
+}
